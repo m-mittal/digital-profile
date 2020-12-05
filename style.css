@@ -1,0 +1,122 @@
+body{
+    background-color: #010101;
+}
+
+#main{
+    height: 250px;
+    width: 485px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 24%;
+    z-index: 1;
+}
+
+#pic{
+    border: 2px solid yellow;
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#intro{
+    height: 180px;
+    width: 300px;
+    display: inline-block;
+    font-family: "Fredoka One", cursive;
+    text-align: center;
+    position: absolute;
+    color: white;
+}
+
+img {
+
+  }
+
+  .h2 {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    margin-top: 15px;
+  }
+
+  .h1 {
+    font-weight: 800;
+    font-size: 3.5em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .sub {
+    font-family: "Acme", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .button{
+      margin-left: 20px;;
+      margin-right: 20px;
+  }
+
+  #connect{
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .dwnld{
+    text-align: center;
+  }
+
+  .dwnld span{
+    border: 2px solid #1862B6;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: monospace;
+    border-radius: 25px;
+    background-color: #1862B6;
+    color: white;
+}
+
+
+
+
+@import "susy";
+@import "compass/reset";
+
+.stars, .twinkling, .clouds {
+	position:absolute;
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:100%;
+}
+
+.stars {
+	z-index: 0;
+	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+
+.twinkling{
+	z-index: 1;
+	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+
+.clouds{
+	z-index: 2;
+    background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}
